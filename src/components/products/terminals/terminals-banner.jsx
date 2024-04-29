@@ -15,7 +15,7 @@ const TerminalsBanner = () => {
                         <div className="col-xl-7 col-lg-12 col-md-12 col-12">
                             <div className="tp-breadcrumb">
                                 <h2 className="tp-breadcrumb__title">
-                                    Terminal Solutions
+                                    Products
                                 </h2>
                             </div>
                         </div>

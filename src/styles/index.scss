@@ -3,3 +3,58 @@
 @import 'node_modules/react-modal-video/scss/modal-video.scss';
 @import 'node_modules/react-18-image-lightbox/src/style.css';
 @import '/public/assets/scss/main.scss';
+
+
+.breadcrumb__area {
+    text-align: center;
+    background-size: cover;
+}
+.product-search {
+    i {
+        position: absolute;
+        right: 20px;
+        top: 0;
+        bottom: 0;
+        margin: 0 auto;
+        align-items: center;
+        display: flex;
+    }
+}
+.list-style {
+    &-number li {list-style: decimal;}
+    &-disc li {list-style: disc;}
+}
+.shop-area .tpshopitem {cursor: pointer;}
+.accordion {
+    &-item,&-button {border-radius: 0;}
+    &-item {
+        box-shadow: none!important;
+        border-width: 1px 0;
+        &:first-of-type {border-radius: 0;}
+    }
+    &-button {
+        background: none!important;
+        box-shadow: none!important;
+        padding: var(--bs-accordion-btn-padding-y) 0;
+        &:after{background-size: 15px;}
+    }
+}
+.accordion-button:not(.collapsed) {color: var(--tp-theme-secondary);}
+.form-check {
+    display: flex;
+    grid-gap: 10px;
+    min-height: 2rem;
+    align-items: center;
+    &-input {
+        margin: 0;
+        width: 1.5em;
+        height: 1.5em;
+        background-size: 16px;
+        border-color: var(--tp-grey-1);
+        background-color: var(--tp-grey-1);
+        &:checked {
+            background-color: var(--tp-theme-secondary);
+            border-color: var(--tp-theme-secondary);
+        }
+    }
+}

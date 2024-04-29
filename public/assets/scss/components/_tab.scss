@@ -56,6 +56,7 @@
             background: #DFE3E9;
             top: 50%;
             transform: translateY(-50%);
+            left: 0;
         }
         &:first-child {
             &::before {
@@ -70,25 +71,51 @@
         background-color: var(--tp-common-white);
     }
     & button {
-        width: 400px;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        background-color: var(--tp-grey-1);
         color: var(--tp-text-2);
-        border-bottom: 4px solid var(--tp-grey-1);
-        text-transform: uppercase;
-        letter-spacing: 1.4px;
-        @media #{$lg,$xl} {
-            padding: 24px 80px;
+    }
+    @media (min-width: 768px) {
+        &.right-border {
+            & .nav-link {border-bottom: 0;}
+            & .nav-link.active {
+                border-bottom: 0;
+                border-right: 4px solid var(--tp-icon-green);
+            }
+            & button {
+                background-color: white;
+                border-bottom: 0;
+                border-right: 4px solid white;
+                padding-right: 25px;
+                text-align: right;
+            }
+            & li:before {width: 0;}
         }
-        @media #{$md} {
-            padding: 22px 60px;
+        & button {
+            width: 400px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            background-color: var(--tp-grey-1);
+            color: var(--tp-text-2);
+            border-bottom: 4px solid var(--tp-grey-1);
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+            @media #{$lg,$xl} {
+                padding: 24px 30px;
+            }
+            @media #{$md} {
+                padding: 22px 30px;
+            }
+            @media #{$xs} {
+                padding: 12px 20px;
+            }
+            &:hover {
+                color: var(--tp-icon-green);
+            }
         }
-        @media #{$xs} {
-            padding: 12px 20px;
-        }
-        &:hover {
-            color: var(--tp-icon-green);
+    }
+    @media (max-width: 767px) {
+        &.right-border {
+            flex-direction: row!important;
+            .w-100 {width: auto!important;}
         }
     }
 }

@@ -33,14 +33,7 @@ const menu_data = [
             {
                 link: '/products/terminals',
                 title: 'Terminal Solutions',
-                has_dropdown: true,
-                sub_menus: [
-                    { link: '/products/terminals/pax', title: 'PAX' },
-                    { link: '/products/terminals/dejavoo', title: 'Dejavoo' },
-                    { link: '/products/terminals/firstdata', title: 'FirstData' ,},
-                    { link: '/products/terminals/nmi', title: 'NMI Gateway' },
-                    { link: '/products/terminals/valorpay', title: 'ValorPay' },
-                ],
+                has_dropdown: false,
             },
             {
                 link: '/products/pos',
@@ -58,7 +51,10 @@ const menu_data = [
             },
             { link: '/products/online-ordering', title: 'Online Ordering' },
             { link: '/products/mobile-app', title: 'Mobile App' },
-            { link: 'https://finovacapital.com/cygnus-payments/', title: 'Finova Capital' },
+            {
+                link: 'https://finovacapital.com/cygnus-payments/',
+                title: 'Finova Capital',
+            },
         ],
     },
     {
@@ -98,7 +94,10 @@ const menu_data = [
                 title: 'Merchant Services',
                 has_dropdown: true,
                 sub_menus: [
-                    { link: 'https://pciapply.com/cygnuspayments', title: 'PCI Compliance' },
+                    {
+                        link: 'https://pciapply.com/cygnuspayments',
+                        title: 'PCI Compliance',
+                    },
                 ],
             },
             {
@@ -106,8 +105,14 @@ const menu_data = [
                 title: 'Agent Services',
                 has_dropdown: true,
                 sub_menus: [
-                    { link: 'https://cygnus.iriscrm.com/v2/login?ref=/v2', title: 'IRIS CRM',},
-                    { link: 'https://forms.zohopublic.com/mikekim1/form/TerminalRequestForm/formperma/njHZPrUSICCUT9HiX3LugEWak7JCEQ1Rdd74mLSWRps', title: 'Terminal Request Form' },
+                    {
+                        link: 'https://cygnus.iriscrm.com/v2/login?ref=/v2',
+                        title: 'IRIS CRM',
+                    },
+                    {
+                        link: 'https://forms.zohopublic.com/mikekim1/form/TerminalRequestForm/formperma/njHZPrUSICCUT9HiX3LugEWak7JCEQ1Rdd74mLSWRps',
+                        title: 'Terminal Request Form',
+                    },
                 ],
             },
         ],

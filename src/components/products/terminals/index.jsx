@@ -4,12 +4,12 @@ import React from 'react'
 import TerminalsArea from './terminals-area'
 import TerminalsBanner from './terminals-banner'
 
-const Terminals = () => {
+const Terminals = (props) => {
     return (
         <>
             <Header />
             <TerminalsBanner />
-            <TerminalsArea />
+            <TerminalsArea {...props} />
             <Footer />
         </>
     )

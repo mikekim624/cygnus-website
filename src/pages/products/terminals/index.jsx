@@ -7,7 +7,7 @@ const index = () => {
     return (
         <Wrapper>
             <SEO pageTitle="Terminals" />
-            <Terminals />
+            <Terminals firstSelected={true} />
         </Wrapper>
     )
 }

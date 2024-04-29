@@ -161,7 +161,7 @@ const NavTab = () => {
     <>
       <section id="nav-area" className="nav-area tp-common-area pt-130 pb-80">
         <div className="container">
-          <ul className="nav tp-nav-tavs mb-70" id="myTab" role="tablist">
+          <ul className="nav tp-nav-tavs mb-70 nav-fill" id="myTab" role="tablist">
             <li className="nav-item" role="presentation">
               <button
                 className="nav-link"
